@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display"></div>
+      <div class="container">
+        <div class="ditgits">
+          <button id="clear" class="numberDitgit" onclick="inputHandler(this)">
+            C</button
+          ><button id="sign" class="numberDitgit" onclick="inputHandler(this)">
+            +/-</button
+          ><button
+            id="percent"
+            class="numberDitgit"
+            onclick="inputHandler(this)"
+          >
+            %
+          </button>
+          <button id="d1" class="numberDitgit" onclick="inputHandler(this)">
+            1
+          </button>
+          <button id="d2" class="numberDitgit" onclick="inputHandler(this)">
+            2
+          </button>
+          <button id="d3" class="numberDitgit" onclick="inputHandler(this)">
+            3
+          </button>
+          <button id="d4" class="numberDitgit" onclick="inputHandler(this)">
+            4
+          </button>
+          <button id="d5" class="numberDitgit" onclick="inputHandler(this)">
+            5
+          </button>
+          <button id="d6" class="numberDitgit" onclick="inputHandler(this)">
+            6
+          </button>
+          <button id="d7" class="numberDitgit" onclick="inputHandler(this)">
+            7
+          </button>
+          <button id="d8" class="numberDitgit" onclick="inputHandler(this)">
+            8
+          </button>
+          <button id="d9" class="numberDitgit" onclick="inputHandler(this)">
+            9
+          </button>
+
+          <button id="d0" class="numberDitgit" onclick="inputHandler(this)">
+            0
+          </button>
+          <button id="dot" class="numberDitgit" onclick="inputHandler(this)">
+            .
+          </button>
+        </div>
+        <div class="operator">
+          <button id="divide" onclick="inputHandler(this)">/</button>
+          <button id="multiply" onclick="inputHandler(this)">*</button>
+          <button id="subtract" onclick="inputHandler(this)">-</button>
+          <button id="add" onclick="inputHandler(this)">+</button>
+          <button id="equals" onclick="inputHandler(this)">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
