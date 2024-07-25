@@ -18,7 +18,6 @@ body {
   background-color: black;
   border: 10px solid black;
   border-radius: 20px;
-  color: white;
 }
 .display {
   display: flex;
