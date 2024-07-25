@@ -7,6 +7,12 @@ let result;
 let firstNumber;
 let secondNumber;
 let operator;
+let ditgitInput = false;
+let operatorInput = false;
+let clearInput = false;
+let signInput = false;
+let percentageInput = false;
+let equalsInput = false;
 
 function add(a, b) {
   return a * 1 + b * 1;
@@ -75,12 +81,7 @@ function allClear() {
 
 function inputHandler(button) {
   const input = button.innerText;
-  let ditgitInput = false;
-  let operatorInput = false;
-  let clearInput = false;
-  let signInput = false;
-  let percentageInput = false;
-  let equalsInput = false;
+
   //input handler
   if ((input >= 0 && input <= 9) || input === ".") {
     ditgitInput = true;
@@ -120,10 +121,11 @@ function inputHandler(button) {
         result = operate(firstNumber, operator, secondNumber);
         console.log(result);
         display.textContent = result;
-        firstNumber = result;
+        firstNumber = null;
         secondNumber = null;
-
-        equalsInput = true;
+        operator = null;
+        numberInput = [];
+        number = "";
         break;
       default: //operator
         if (!firstNumber) {
